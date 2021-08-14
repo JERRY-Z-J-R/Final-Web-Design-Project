@@ -124,6 +124,7 @@ musicLogo.oncontextmenu = function (e) {
     // 如果音乐没有在播放，那么禁用右键
     if (music.paused) {} else {
         for (; x < yyArr.length; x++) {
+            // 如果为最后一首音乐，那么下一首为第一首
             if (x == yyArr.length - 1) {
                 x = 0;
                 music.src = yyArr[x];
